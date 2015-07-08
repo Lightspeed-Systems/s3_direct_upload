@@ -1,9 +1,16 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
-# Specify your gem's dependencies in s3_direct_upload.gemspec
-gemspec
-gem 'rspec'
-gem 'jquery-fileupload-rails'
-gem 'activesupport'
-gem 'rake'
+gem 'aws-sdk'
+gem 'delayed_job_active_record'
+gem 'jquery-rails'
+gem 'jquery-ui-rails'
+gem 'paperclip', '~> 3.5'
+gem 'pg'
+gem 'rails', '4.1.1'
+gem 's3_direct_upload'
+gem 'sass-rails', '~> 4.0.3'
+gem 'uglifier', '>= 1.3.0'
 
+group :development do
+  gem 'annotate'
+end
